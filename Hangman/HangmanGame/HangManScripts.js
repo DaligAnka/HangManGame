@@ -251,6 +251,8 @@ const drawFisherMan = (count) => {
     }
 };
 
+// @media (max-width: 450px) {
+
 
 
 

@@ -109,6 +109,9 @@ display: block;
 margin: auto;
 border: 1px solid #6ca3a3;
 }
+
+
+
 .hide{
   display: none;
   }
@@ -133,12 +136,11 @@ text-align: center;
   #new_game_btn:hover{
     transition: 0.25s ease;
     box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
-    color: $primary;
     border-color: transparent;
     background-color: transparent;
   }
 #new_game_btn:active{
-  background-color: #ebd9d91;
+  background-color: #ebd9d9;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -276,3 +278,12 @@ text-align: center;
   }
 
 
+  @media (max-width: 450px){
+    canvas {
+     width: 98%;
+  
+    }
+    #options_container button{
+      width: 50%;
+    }
+  }
