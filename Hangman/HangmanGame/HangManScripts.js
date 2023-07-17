@@ -115,19 +115,30 @@ for(let i=65;i<91;i++){
 button.innerText = String.fromCharCode(i);
 button.addEventListener("click", () => {
     let charArray = chosenWord.split("");
+<<<<<<< HEAD
     let dashes = document.getElementsByClassName("dashes")[0]; 
+=======
+    let dashes = document.getElementsByClassName("dashes")[0];
+>>>>>>> a0405eb066a37c620f9212abd0837b6fcd5e9b24
     if (charArray.includes(button.innerText)){
         charArray.forEach((char, index) => {
         
             if(char === button.innerText) {
                 //  ТУТ БЛЯТЬ КАКАЯ ТО ОШИБКА
+<<<<<<< HEAD
               
 
+=======
+            
+>>>>>>> a0405eb066a37c620f9212abd0837b6fcd5e9b24
                 const strArray = Array.from(dashes.innerText);
                 strArray[index] = char;
                 dashes.innerText = strArray.join("");
 
+<<<<<<< HEAD
         //         dashes[index].innerText = char;
+=======
+>>>>>>> a0405eb066a37c620f9212abd0837b6fcd5e9b24
                 winCount += 1;
         // console.log(dashes)
                 if(winCount == strArray.length) {
