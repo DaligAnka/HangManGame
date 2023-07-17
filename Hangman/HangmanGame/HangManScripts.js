@@ -48,7 +48,6 @@ const displayOptions = () => {
 }; 
 
 
-// ГДЕ ТО ТУТ ОШИБКА
 const blocker = () => {
     let optionsButtons = document.querySelectorAll(".options");
     let letterButtons = document.querySelectorAll(".letters");
@@ -64,7 +63,7 @@ newGameContainer.classList.remove("hide");
 };
 
 
-//Или тут
+
 const generateWord = (optionValue) => {
     let optionsButtons = document.querySelectorAll(".options");
 
@@ -79,7 +78,7 @@ letterContainer.classList.remove("hide");
 userInputSection.innerText = "";
 
 
-//Слово загадка. Добавить подсказку?
+//Слово загадка. 
 let optionArray = options[optionValue];
 chosenWord = optionArray[Math.floor(Math.random() * optionArray.length)];
 chosenWord = chosenWord.toUpperCase();
@@ -115,30 +114,19 @@ for(let i=65;i<91;i++){
 button.innerText = String.fromCharCode(i);
 button.addEventListener("click", () => {
     let charArray = chosenWord.split("");
-<<<<<<< HEAD
     let dashes = document.getElementsByClassName("dashes")[0]; 
-=======
-    let dashes = document.getElementsByClassName("dashes")[0];
->>>>>>> a0405eb066a37c620f9212abd0837b6fcd5e9b24
     if (charArray.includes(button.innerText)){
         charArray.forEach((char, index) => {
         
             if(char === button.innerText) {
-                //  ТУТ БЛЯТЬ КАКАЯ ТО ОШИБКА
-<<<<<<< HEAD
+               
               
 
-=======
-            
->>>>>>> a0405eb066a37c620f9212abd0837b6fcd5e9b24
                 const strArray = Array.from(dashes.innerText);
                 strArray[index] = char;
                 dashes.innerText = strArray.join("");
 
-<<<<<<< HEAD
         //         dashes[index].innerText = char;
-=======
->>>>>>> a0405eb066a37c620f9212abd0837b6fcd5e9b24
                 winCount += 1;
         // console.log(dashes)
                 if(winCount == strArray.length) {
