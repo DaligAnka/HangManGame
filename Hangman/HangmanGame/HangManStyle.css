@@ -22,10 +22,12 @@ body {
     padding: 3em;
     border-radius: 0.6em;
     box-shadow: 0 1.2em  2.4em rgba(30, 255, 0, 0.25);
+  
   }
 
   #options_container {
     text-align: center;
+    
   }
   #options_container h3{
     font-size: 1.2em;
@@ -45,17 +47,24 @@ body {
   color: #000;
   border-radius: 0.3em;
   text-transform: capitalize;
+  
 }
 
 #options_container button:disabled{
+  
   border: 3px solid #808080;
   color: #808080;
   background-color: #efefef;
+
 }
 #options_container button.active{
 background-color: #f4f4f4;
 border: 3px solid #000;
 color: #000;
+}
+
+button{
+  cursor: pointer;
 }
 
 .letter_container {
@@ -69,8 +78,10 @@ color: #000;
   height: 1.4em;
   width: 1.7em;
   border-radius: 0.3;
-  background-color: rgb(9, 247, 247)
+  background-color: rgb(9, 247, 247),
+  
 }
+
 
 .new_game_popup{
   background-color: #ffffff;
@@ -85,16 +96,54 @@ color: #000;
 flex-direction: column;
 border-radius: 0.6em;
 }
-.hide{
-display: none;
-}
+
 #user_input_section {
   display: flex;
   justify-content: center;
 font-size: 1.8em;
 margin: 0.6em 0 1.2em 0;
-
 }
+
+canvas{
+display: block;
+margin: auto;
+border: 1px solid #6ca3a3;
+}
+.hide{
+  display: none;
+  }
+
+  #result_text h2 {
+font-size: 1.3em;
+text-align: center;
+  }
+  #result_text p {
+font-size: 1.25em;
+margin: 10px;
+text-align: center;
+  }
+  
+  #new_game_btn {
+    padding: 0.5em 1em;
+    background-color: #ebd9d9;
+    border: 3px solid #000000;
+    color: #000000;
+    border-radius: 0.2em;    
+  }
+  #new_game_btn:hover{
+    transition: 0.25s ease;
+    box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
+    color: $primary;
+    border-color: transparent;
+    background-color: transparent;
+  }
+#new_game_btn:active{
+  background-color: #ebd9d91;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  
+
 
 
 
