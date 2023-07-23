@@ -8,9 +8,14 @@
 }
 
 body {
-    background: #6ca3a3;
+    background:#6ca3a3;
+    background-image: url('https://github.com/gitdagray/css_course/blob/main/16_lesson_starter/img/bubbles.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 10%, 10%;
   }
   .container{
+   /* z-index: 1; */
     font-size: 16px;
     background-color: #ffff;
     width: 90vw;
